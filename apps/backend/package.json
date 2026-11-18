@@ -4,6 +4,8 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "dev": "bun --watch index.ts",
+    "start": "bun index.ts",
     "typecheck": "bun check"
   },
   "devDependencies": {
@@ -14,7 +16,7 @@
   },
   "dependencies": {
     "@types/express": "^5.0.6",
-    "db": "*",
+    "@repo/db": "workspace:*",
     "dotenv": "^18.0.10",
     "express": "^5.3.0"
   }

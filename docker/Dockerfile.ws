@@ -14,4 +14,4 @@ RUN bun run db:generate
 
 EXPOSE 8081
 
-CMD ["bun", "run", "apps/ws/index.ts"]
+CMD ["bun", "run", "start", "--cwd", "apps/ws"]
